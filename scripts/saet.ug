@@ -1,0 +1,171 @@
+# saet bash programmisi
+
+# ikran chongluqi
+mixtar ikranKengliki qimmiti 500 bolsun
+mixtar ikranIgizliki qimmiti 600 bolsun
+
+# ikran merkizi
+mixtar merkezX qimmiti quruq bolsun
+mixtar merkezY qimmiti quruq bolsun
+merkezX qimmiti ikranKengliki bulungen 2 bolsun
+merkezY qimmiti ikranIgizliki bulungen 2 bolsun
+
+# mixtarlar
+mixtar chislaOrniY qimmiti quruq bolsun
+chislaOrniY qimmiti ikranIgizliki elinghan 40 bolsun
+mixtar chisla qimmiti quruq bolsun
+# 
+mixtar saet qimmiti quruq bolsun
+mixtar minut qimmiti quruq bolsun
+mixtar sikunit qimmiti quruq bolsun
+# 
+mixtar saetGradusi qimmiti quruq bolsun
+mixtar minutGradusi qimmiti quruq bolsun
+mixtar sikunitGradusi qimmiti quruq bolsun
+# 
+mixtar hazirqiSikunit qimmiti quruq bolsun
+mixtar aldinqiSikunit qimmiti quruq bolsun
+mixtar oxshashSikunitmu qimmiti quruq bolsun
+mixtar chushtinKiyinmu qimmiti quruq bolsun
+mixtar saetArtuqche qimmiti quruq bolsun
+mixtar minutArtuqche qimmiti quruq bolsun
+
+# istirilka nami
+mixtar SAET qimmiti [SAET] bolsun
+mixtar MINUT qimmiti [MINUT] bolsun
+mixtar SIKUNIT qimmiti [SIKUNIT] bolsun
+
+# radius
+mixtar teglikRadiusi qimmiti 200 bolsun
+mixtar saetRadiusi qimmiti 150 bolsun
+mixtar minutRadiusi qimmiti 170 bolsun
+mixtar sikunitRadiusi qimmiti 190 bolsun
+mixtar hazirqiRadius qimmiti quruq bolsun
+
+# mezmunlar
+mixtar koznekTemisi qimmiti [سائەت] bolsun
+mixtar koznekIconsi qimmiti [./others/icon.png] bolsun
+mixtar sexneTemisi qimmiti [ﻢﯩﻠﯩﺗ ﺭﻩﺯ ﻢﯩﻠﯩﺗ ﺎﻧﺎﺋ] bolsun
+mixtar fontAdirsi qimmiti [./others/ukij.ttf] bolsun
+
+# mixtardin bulung hisablash
+fonkisiye bulungHisablash mixtar hazirqi umumiy bolsa
+    mixtar waqitliqQimmet qimmiti 360 bolsun
+    waqitliqQimmet qimmiti waqitliqQimmet bulungen umumiy bolsun
+    waqitliqQimmet qimmiti waqitliqQimmet kupeytilgen hazirqi bolsun
+    netije waqitliqQimmet qayturulsun
+tamamlansun
+
+# artuqche bulung hisablash
+fonkisiye artuqcheHisablash mixtar hazirqi jamiiy bolsa
+    mixtar waqitliqQimmet qimmiti jamiiy bolsun
+    waqitliqQimmet qimmiti waqitliqQimmet bulungen 360 bolsun
+    waqitliqQimmet qimmiti waqitliqQimmet kupeytilgen hazirqi bolsun
+    netije waqitliqQimmet qayturulsun
+tamamlansun
+
+# istirilka sizish
+mixtar b qimmiti quruq bolsun
+mixtar a qimmiti quruq bolsun
+mixtar x qimmiti quruq bolsun
+mixtar y qimmiti quruq bolsun
+fonkisiye istirilkaSizish mixtar istirilka bulung bolsa
+    # Pythagoras qanuniyiti
+    fonkisiye matimatikaRadian bilen bulung ishlitilsun we netije a bolsun
+    fonkisiye matimatikaRadian bilen bulung ishlitilsun we netije b bolsun
+    fonkisiye matimatikaSinos bilen a ishlitilsun we netije a bolsun
+    fonkisiye matimatikaKosinos bilen b ishlitilsun we netije b bolsun
+    # 
+    eger istirilka qimmiti SAET bolsa
+        hazirqiRadius qimmiti saetRadiusi bolsun
+    egerde istirilka qimmiti MINUT bolsa
+        hazirqiRadius qimmiti minutRadiusi bolsun
+    egerde istirilka qimmiti SIKUNIT bolsa
+        hazirqiRadius qimmiti sikunitRadiusi bolsun
+    bolmisa
+        hazirqiRadius qimmiti teglikRadiusi bolsun
+    tamamlansun
+    # 
+    x qimmiti hazirqiRadius kupeytilgen a bolsun
+    y qimmiti hazirqiRadius kupeytilgen b bolsun
+    x qimmiti merkezX qushulghan x bolsun
+    y qimmiti merkezY elinghan y bolsun
+    # 
+    fonkisiye rengBikitish bilen 255 255 255 255 ishlitilsun
+    fonkisiye siziqSizish bilen merkezX merkezY x y ishlitilsun
+tamamlansun
+
+# ikrangha nerse sizish
+fonkisiye sexneSizish mixtar waqit bolsa
+    # teglik
+    fonkisiye rengBikitish bilen 10 10 10 255 ishlitilsun
+    fonkisiye rayunSizish bilen 0 0 ikranKengliki ikranIgizliki ishlitilsun
+    fonkisiye rengBikitish bilen 30 30 30 255 ishlitilsun
+    fonkisiye rayunSizish bilen 5 5 490 590 ishlitilsun
+    # saet
+    fonkisiye rengBikitish bilen 10 10 10 255 ishlitilsun
+    fonkisiye chemberSizish bilen merkezX merkezY teglikRadiusi ishlitilsun
+    # mekez
+    fonkisiye rengBikitish bilen 70 70 70 255 ishlitilsun
+    fonkisiye chemberSizish bilen merkezX merkezY 10 ishlitilsun
+    # tema
+    fonkisiye rengBikitish bilen 200 200 200 255 ishlitilsun
+    fonkisiye xetSizish bilen sexneTemisi 0 0 0 0 350 75 0 0 fontAdirsi 36 yalghan yalghan 0 1 1 ishlitilsun
+    # asti
+    fonkisiye rengBikitish bilen 200 200 200 255 ishlitilsun
+    fonkisiye chislaHisablash bilen [%Y-%m-%d %H:%M:%S] waqit ishlitilsun we netije chisla bolsun
+    fonkisiye xetSizish bilen chisla 0 0 0 0 400 chislaOrniY 0 0 fontAdirsi 36 yalghan yalghan 0 1 1 ishlitilsun
+    # saet minut sikunit
+    fonkisiye chislaHisablash bilen [%H] waqit ishlitilsun we netije saet bolsun
+    fonkisiye chislaHisablash bilen [%M] waqit ishlitilsun we netije minut bolsun
+    fonkisiye chislaHisablash bilen [%S] waqit ishlitilsun we netije sikunit bolsun
+    #
+    saet tipi san bolsun
+    minut tipi san bolsun
+    sikunit tipi san bolsun
+    # 24 saet alahide bir terep qilish
+    chushtinKiyinmu qimmiti saet chong 11 bolsun
+    eger chushtinKiyinmu qimmiti rast bolsa
+        saet qimmiti saet elinghan 12 bolsun
+    tamamlansun
+    # gradusqa aylandurush
+    fonkisiye bulungHisablash bilen saet 12 ishlitilsun we netije saetGradusi bolsun
+    fonkisiye bulungHisablash bilen minut 60 ishlitilsun we netije minutGradusi bolsun
+    fonkisiye bulungHisablash bilen sikunit 60 ishlitilsun we netije sikunitGradusi bolsun
+    # artuqini hisablash
+    fonkisiye artuqcheHisablash bilen minutGradusi 30 ishlitilsun we netije saetArtuqche bolsun
+    fonkisiye artuqcheHisablash bilen sikunitGradusi 5 ishlitilsun we netije minutArtuqche bolsun
+    saetGradusi qimmiti saetGradusi qushulghan saetArtuqche bolsun
+    minutGradusi qimmiti minutGradusi qushulghan minutArtuqche bolsun
+    # istirilka sizish
+    fonkisiye istirilkaSizish bilen SAET saetGradusi ishlitilsun
+    fonkisiye istirilkaSizish bilen MINUT minutGradusi ishlitilsun
+    fonkisiye istirilkaSizish bilen SIKUNIT sikunitGradusi ishlitilsun
+    # ijra qilish
+    fonkisiye sexniniSizish ishlitilsun
+    ikrangha [yingilandi] yezilsun
+tamamlansun
+
+# sexnige kirish
+fonkisiye sexneBashlash bolsa
+    ikrangha [bashlandi] yezilsun
+    fonkisiye temaBikitish bilen koznekTemisi ishlitilsun
+    fonkisiye iconBikitish bilen koznekIconsi ishlitilsun
+tamamlansun
+
+# abonit meshghulati
+fonkisiye sexneMeshghulat mixtar ismi mezmuni bolsa
+    eger ismi qimmiti [SDL_QUIT] bolsa
+        fonkisiye sexnidinChikinish ishlitilsun
+    tamamlansun
+tamamlansun
+
+# sexne yingilash
+fonkisiye sexneYingilash bolsa
+    fonkisiye hazirqiWaqit ishlitilsun we netije hazirqiSikunit bolsun
+    oxshashSikunitmu qimmiti aldinqiSikunit teng hazirqiSikunit bolsun
+    aldinqiSikunit qimmiti hazirqiSikunit bolsun
+    eger oxshashSikunitmu qimmiti yalghan bolsa
+        fonkisiye sexneSizish bilen hazirqiSikunit ishlitilsun
+    tamamlansun
+tamamlansun
