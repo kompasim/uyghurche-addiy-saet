@@ -110,11 +110,11 @@ fonkisiye sexneSizish mixtar waqit bolsa
     fonkisiye chemberSizish bilen merkezX merkezY 10 ishlitilsun
     # tema
     fonkisiye rengBikitish bilen 200 200 200 255 ishlitilsun
-    fonkisiye xetSizish bilen sexneTemisi 0 0 0 0 350 75 0 0 fontAdirsi 36 yalghan yalghan 0 1 1 ishlitilsun
+    fonkisiye xetSizish bilen sexneTemisi 0 0 0 0 merkezX 50 0 0 fontAdirsi 36 yalghan yalghan 0 0.5 0.5 ishlitilsun
     # asti
     fonkisiye rengBikitish bilen 200 200 200 255 ishlitilsun
     fonkisiye chislaHisablash bilen [%Y-%m-%d %H:%M:%S] waqit ishlitilsun we netije chisla bolsun
-    fonkisiye xetSizish bilen chisla 0 0 0 0 400 chislaOrniY 0 0 fontAdirsi 36 yalghan yalghan 0 1 1 ishlitilsun
+    fonkisiye xetSizish bilen chisla 0 0 0 0 merkezX chislaOrniY 0 0 fontAdirsi 36 yalghan yalghan 0 0.5 0.5 ishlitilsun
     # saet minut sikunit
     fonkisiye chislaHisablash bilen [%H] waqit ishlitilsun we netije saet bolsun
     fonkisiye chislaHisablash bilen [%M] waqit ishlitilsun we netije minut bolsun
